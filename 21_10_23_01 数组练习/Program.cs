@@ -81,7 +81,6 @@ namespace _21_10_23_01_数组练习
             }
             Console.WriteLine();
             Console.ReadKey();
-            //测试
         }
     }
 }
