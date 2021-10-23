@@ -103,6 +103,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21_10_17_01 计算数组的
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21_10_23_01 数组练习", "21_10_23_01 数组练习\21_10_23_01 数组练习.csproj", "{8B46BD03-30B5-441A-A80E-F8D8A4B41532}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21_10_23_02 冒泡排序", "21_10_23_02 冒泡排序\21_10_23_02 冒泡排序.csproj", "{EE89F87B-F8CD-4A22-A323-BDB2381AF67D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -713,6 +715,18 @@ Global
 		{8B46BD03-30B5-441A-A80E-F8D8A4B41532}.Release|x64.Build.0 = Release|Any CPU
 		{8B46BD03-30B5-441A-A80E-F8D8A4B41532}.Release|x86.ActiveCfg = Release|Any CPU
 		{8B46BD03-30B5-441A-A80E-F8D8A4B41532}.Release|x86.Build.0 = Release|Any CPU
+		{EE89F87B-F8CD-4A22-A323-BDB2381AF67D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE89F87B-F8CD-4A22-A323-BDB2381AF67D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE89F87B-F8CD-4A22-A323-BDB2381AF67D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EE89F87B-F8CD-4A22-A323-BDB2381AF67D}.Debug|x64.Build.0 = Debug|Any CPU
+		{EE89F87B-F8CD-4A22-A323-BDB2381AF67D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EE89F87B-F8CD-4A22-A323-BDB2381AF67D}.Debug|x86.Build.0 = Debug|Any CPU
+		{EE89F87B-F8CD-4A22-A323-BDB2381AF67D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE89F87B-F8CD-4A22-A323-BDB2381AF67D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE89F87B-F8CD-4A22-A323-BDB2381AF67D}.Release|x64.ActiveCfg = Release|Any CPU
+		{EE89F87B-F8CD-4A22-A323-BDB2381AF67D}.Release|x64.Build.0 = Release|Any CPU
+		{EE89F87B-F8CD-4A22-A323-BDB2381AF67D}.Release|x86.ActiveCfg = Release|Any CPU
+		{EE89F87B-F8CD-4A22-A323-BDB2381AF67D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
