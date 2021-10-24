@@ -59,9 +59,9 @@ namespace _21_10_13_01_枚举类型和string类型以及int类型之间的转换
             Console.WriteLine(s4);
             Console.ReadKey();
             //打印结果为Online
-
+            
             //将字符串转换为枚举类型
-            string s5 = "200";//将这个0转换成枚举类型
+            string s5 = "1";//将这个1转换成枚举类型
             //调用Parse方法 帮助将字符串转换成对应的枚举类型
             //如果数字超出枚举范围则返回原值
             QQState state5 = (QQState)Enum.Parse(typeof(QQState), s5);
