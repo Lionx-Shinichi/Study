@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _21_24_01_方法的调用问题
+namespace _21_10_24_01_方法的调用问题
 {
     class Program
     {
@@ -25,7 +25,6 @@ namespace _21_24_01_方法的调用问题
             bool result = (year % 400 == 0) || (year % 4 == 0 && year % 100 != 0);
             return result;
         }
-
         static void Main(string[] args)
         {
             /*

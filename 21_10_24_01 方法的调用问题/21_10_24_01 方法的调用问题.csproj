@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{ABC682F3-74E2-407F-897B-8764D011B1C9}</ProjectGuid>
+    <ProjectGuid>{120293B9-37EB-4418-ACA8-3CFE1B94948A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_21_24_01_方法的调用问题</RootNamespace>
-    <AssemblyName>21_24_01 方法的调用问题</AssemblyName>
+    <RootNamespace>_21_10_24_01_方法的调用问题</RootNamespace>
+    <AssemblyName>21_10_24_01 方法的调用问题</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("21_24_01 方法的调用问题")]
+[assembly: AssemblyTitle("21_10_30_01 方法专项练习")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("21_24_01 方法的调用问题")]
+[assembly: AssemblyProduct("21_10_30_01 方法专项练习")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("abc682f3-74e2-407f-897b-8764d011b1c9")]
+[assembly: Guid("a7b319b6-d605-4361-90be-033fecec3700")]
 
 // 程序集的版本信息由下列四个值组成: 
 //
