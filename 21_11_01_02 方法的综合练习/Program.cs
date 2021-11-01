@@ -168,10 +168,57 @@ namespace _21_11_01_02_方法的综合练习
             area = Math.PI * r * r;
             perimeter = 2 * Math.PI * r;
         }
+        /// <summary>
+        /// 练习8用：传入一个 double 类型的数组，返回其 double 类型的最大值
+        /// </summary>
+        /// <param name="input">double 类型的数组</param>
+        /// <returns>double 类型的最大值</returns>
+        public static double GetMax(params double[] input)
+        {
+            double max = double.MinValue;
+            for (int i = 0; i < input.Length; i++)
+            {
+                if (input[i] > max)
+                {
+                    max = input[i];
+                }
+            }
+            return max;
+        }
+        /// <summary>
+        /// 练习9用：传入一个整数数组，将对这个数组升序排列并返回ref参数类型的整数数组
+        /// </summary>
+        /// <param name="input">整数数组</param>
+        public static void Sort(ref int[] input)
+        {
+            for (int i = 0; i < input.Length - 1; i++)
+            {
+                for (int j = 0; j < input.Length - 1 - i; j++)
+                {
+                    if (input[j] > input[j + 1])
+                    {
+                        int temp = input[j + 1];
+                        input[j + 1] = input[j];
+                        input[j] = temp;
+                    }
+                }
+            }
+        }
+        /// <summary>
+        /// 练习10用：将传入的字符串数组个元素之间加"|"号并打印在控制台上
+        /// </summary>
+        /// <param name="input">字符串数组</param>
+        public static void SegmentationAndWriteLine(string[] input)
+        {
+            for (int i = 0; i < input.Length - 1; i++)
+            {
+                Console.Write(input[i] + "|");
+            }
+            Console.WriteLine(input[input.Length - 1]);
+        }
 
         static void Main(string[] args)
         {
-            
             //练习1：提示用户输入两个数字，计算这两个数字之间的所有整数的和
             //1.用户只能输入数字
             //2.计算两个数字之间所有整数的和
@@ -283,7 +330,25 @@ namespace _21_11_01_02_方法的综合练习
             AreaPerimeterOfCircle(r, out double area, out double perimeter);
             Console.WriteLine("该圆的面积为{0:0.00}，周长为{1:0.00} (单位与输入的半径的单位对应，结果保留2位小数（四舍五入）)", area, perimeter);
             Console.ReadKey();
+            
+            //练习8：得出任意多个数其中的最大值，要求使用params
+            double max = GetMax(5, 2, 65, 1, 2, 3, 7, 32, 99.7, 212, 518.3);
+            Console.WriteLine("最大值是{0}", max);
+            Console.ReadKey();
+            
+            //练习9：使用冒泡排序对一个整数数组升序排列
+            int[] nums9 = { 3, 5, 7, 4, 1, 9, 2, 8, 6 };
+            Sort(ref nums9);
+            for (int i = 0; i < nums9.Length - 1; i++)
+            {
+                Console.Write("{0},", nums9[i]);
+            }
+            Console.WriteLine(nums9[nums9.Length - 1]);
+            Console.ReadKey();
+            //练习10：将一个字符串数组输出为|分割的形式，比如"梅西|卡卡|郑大世"
+            string[] names10 = { "梅西", "卡卡", "郑大世", "内马尔" };
+            SegmentationAndWriteLine(names10);
+            Console.ReadKey();
         }
-        
     }
 }
