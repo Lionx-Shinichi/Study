@@ -140,7 +140,7 @@ namespace _21_11_01_03_大型项目_飞行棋游戏
                 PlayerPos[1] = 0;
             }
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine("{0}的士兵用A表示，{1}的士兵用B表示", PlayerNames[0], PlayerNames[1]);
+            Console.WriteLine("{0}的棋子用A表示，{1}的棋子用B表示", PlayerNames[0], PlayerNames[1]);
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("图例：普通格：□   幸运轮盘：◎   地雷：☆   暂停：▲   ");
             Console.WriteLine("      时空隧道：卐 玩家重叠：<>");
@@ -222,6 +222,23 @@ namespace _21_11_01_03_大型项目_飞行棋游戏
         /// <param name="roundA">现在是谁的回合判断</param>
         public static void CheckPos(bool roundA)
         {
+            //是否互相踩踏检查
+            if (roundA)
+            {
+                if (PlayerPos[0] == PlayerPos[1])
+                {
+                    Console.WriteLine("踩到对方棋子，对方已经后退六格");
+                    PlayerPos[1] -= 6;
+                }
+            }
+            else if (roundA == false)
+            {
+                if (PlayerPos[0] == PlayerPos[1])
+                {
+                    Console.WriteLine("踩到对方棋子，对方已经后退六格");
+                    PlayerPos[0] -= 6;
+                }
+            }
             //幸运轮盘检查
             for (int i = 0; i < LuckyTurn.Length; i++)
             {
@@ -334,7 +351,7 @@ namespace _21_11_01_03_大型项目_飞行棋游戏
                         return;
                     }
                 }
-                else if(roundA==false)
+                else if (roundA == false)
                 {
                     if (PlayerPos[1] == Pause[i])
                     {
@@ -347,18 +364,18 @@ namespace _21_11_01_03_大型项目_飞行棋游戏
             //时空隧道检查
             for (int i = 0; i < TimeTunnel.Length; i++)
             {
-                if(roundA)
+                if (roundA)
                 {
-                    if(PlayerPos[0]==TimeTunnel[i])
+                    if (PlayerPos[0] == TimeTunnel[i])
                     {
                         PlayerPos[0] += 10;
                         Console.WriteLine("触碰到时空隧道，向前移动10格");
                         return;
                     }
                 }
-                else if(roundA==false)
+                else if (roundA == false)
                 {
-                    if(PlayerPos[1]==TimeTunnel[i])
+                    if (PlayerPos[1] == TimeTunnel[i])
                     {
                         PlayerPos[1] += 10;
                         Console.WriteLine("触碰到时空隧道，向前移动10格");
@@ -366,6 +383,7 @@ namespace _21_11_01_03_大型项目_飞行棋游戏
                     }
                 }
             }
+
         }
         static void Main(string[] args)
         {
