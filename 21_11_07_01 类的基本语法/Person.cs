@@ -52,7 +52,7 @@ namespace _21_11_07_01_类的基本语法
         //方法
         public void Programming()
         {                                                                        //this关键字表示当前这个类的对象
-            Console.WriteLine("我叫{0}，我今年{1}岁了，性别是{2}，我的特长是编译程序。", this.Name, this.Age, this.Gender);
+            Console.WriteLine("我叫{0}，年龄{1}，性别是{2}，我的特长是编译程序。", this.Name, this.Age, this.Gender);
         }
     }
 }
