@@ -148,12 +148,6 @@ namespace _00_00_00_00_代码词典
             */
             #endregion
 
-            #region break;
-            /*
-            立即跳出距离最近的循环结构或switch-case结构
-            */
-            #endregion
-
             #region  for循环
             /*
             for (声明循环次数的变量; 循环条件; 使循环条件不成立的代码)举例：（int i = 0; i < 10; i++）
